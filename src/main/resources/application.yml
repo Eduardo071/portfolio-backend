@@ -30,6 +30,4 @@ portfolio:
   contact:
     to-email: ${CONTACT_TO_EMAIL:eduardoborges.developer@gmail.com}
   cors:
-    allowed-origins:
-      - ${CORS_ORIGIN_1:http://localhost:4200}
-      - ${CORS_ORIGIN_2:https://portfolio-eb.vercel.app}
+    allowed-origins: ${CORS_ORIGIN_1:http://localhost:4200},${CORS_ORIGIN_2:https://portfolio-eb.vercel.app}
