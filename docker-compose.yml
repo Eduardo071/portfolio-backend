@@ -1,0 +1,20 @@
+services:
+  portfolio-backend:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+      MAIL_HOST: smtp.gmail.com
+      MAIL_PORT: 587
+      MAIL_USERNAME: ${MAIL_USERNAME}
+      MAIL_PASSWORD: ${MAIL_PASSWORD}
+      CONTACT_TO_EMAIL: eduardoborges.developer@gmail.com
+      CORS_ORIGIN_1: http://localhost:4200
+      CORS_ORIGIN_2: https://portfolio-eb.vercel.app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

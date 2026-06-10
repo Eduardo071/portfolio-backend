@@ -1,0 +1,35 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: portfolio
+  mail:
+    host: ${MAIL_HOST:smtp.gmail.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME:eduardoborges.developer@gmail.com}
+    password: ${MAIL_PASSWORD:changeme}
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+  threads:
+    virtual:
+      enabled: true   # Java 21 virtual threads
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+
+portfolio:
+  contact:
+    to-email: ${CONTACT_TO_EMAIL:eduardoborges.developer@gmail.com}
+  cors:
+    allowed-origins:
+      - ${CORS_ORIGIN_1:http://localhost:4200}
+      - ${CORS_ORIGIN_2:https://portfolio-eb.vercel.app}
