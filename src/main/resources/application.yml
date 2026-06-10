@@ -4,15 +4,6 @@ server:
 spring:
   application:
     name: portfolio
-  mail:
-    host: ${MAIL_HOST:smtp.gmail.com}
-    port: ${MAIL_PORT:587}
-    username: ${MAIL_USERNAME:eduardoborges.developer@gmail.com}
-    password: ${MAIL_PASSWORD:changeme}
-    properties:
-      mail.smtp.auth: true
-      mail.smtp.starttls.enable: true
-
   threads:
     virtual:
       enabled: true   # Java 21 virtual threads
@@ -25,6 +16,9 @@ management:
   endpoint:
     health:
       show-details: never
+
+resend:
+  api-key: ${RESEND_API_KEY:}
 
 portfolio:
   contact:
