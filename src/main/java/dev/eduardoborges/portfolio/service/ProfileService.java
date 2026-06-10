@@ -23,16 +23,16 @@ public class ProfileService {
             "Eduardo Borges",
             "Eduardo",
             "Borges",
-            "Backend Engineer II",
+            "Fullstack Engineer",
             "PicPay",
             "Uberlândia, MG",
             """
-            <p>Desenvolvedor Backend com foco em sistemas de <strong>alta disponibilidade</strong> \
-            e alto volume no setor de pagamentos digitais. Atualmente Backend Engineer II na \
+            <p>Fullstack Engineer com <strong>especialização backend</strong> em sistemas de alta \
+            disponibilidade e alto volume no setor de pagamentos digitais. Atualmente na \
             <strong>PicPay</strong>, uma das maiores fintechs do Brasil.</p>
-            <p>Sólida experiência em arquitetura de microsserviços com <strong>Java &amp; Spring Boot</strong>, \
-            mensageria assíncrona com <strong>Apache Kafka</strong> e <strong>Amazon SQS</strong>, \
-            e background fullstack com <strong>Angular + TypeScript</strong>.</p>
+            <p>Trajetória em <strong>bigtech · consultoria · startup</strong> — arquitetura de microsserviços \
+            com <strong>Java &amp; Spring Boot</strong>, mensageria com <strong>Apache Kafka</strong> \
+            e <strong>Amazon SQS</strong>, e interfaces com <strong>Angular + TypeScript</strong>.</p>
             <p>Atuo com autonomia, forte <em>ownership</em> e comprometimento com boas práticas: \
             <strong>SOLID, Clean Code</strong> e arquitetura evolutiva orientada ao negócio.</p>
             """,
