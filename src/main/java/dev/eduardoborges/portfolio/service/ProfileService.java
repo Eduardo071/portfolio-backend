@@ -98,7 +98,7 @@ public class ProfileService {
             ),
             new Education(
                 "Formação Fullstack — DevQuest",
-                "Dev em Dobro · JavaScript, TypeScript, Angular, Node.js, Jest, CI/CD",
+                "Dev em Dobro · JavaScript, TypeScript, React, Node.js, Jest, CI/CD",
                 "Jan/2022 – Jan/2023",
                 "📜"
             )
